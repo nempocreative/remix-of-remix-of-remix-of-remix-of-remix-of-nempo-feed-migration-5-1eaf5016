@@ -1,12 +1,13 @@
 import type { RefObject } from 'react';
 import stagePhoto from '@/assets/nempo-feed-56/nempo-feed-56-panggung-film.jpg.asset.json';
+import titleArt from '@/assets/nempo-feed-56/nempo-feed-56-judul-emas.webp.asset.json';
 import { NempoFooter, NempoHeader } from './KalaMudaRecruitSlide';
 import { nempoKolaborasiPoster as P } from './nempo-kolaborasi';
 import './NempoKolaborasiPosterSlide.css';
 
 /**
  * NEMPO Feed slide 56 (3:4): the "cara kolaborasi" content as a movie one-sheet — the same Nempo Feed header
- * every other slide uses, a big metallic title on the night sky, italic tagline and release line, then a
+ * every other slide uses, an AI-lettered gold movie title on the night sky, italic tagline and release line, then a
  * billing block of the benefits, the three steps and the WhatsApp CTA, over a lit stage at a cafe / tourist
  * spot with a silhouetted audience.
  */
@@ -29,8 +30,9 @@ export function NempoKolaborasiPosterSlide({ exportRef }: { exportRef?: RefObjec
       <NempoHeader badge={P.badge} />
 
       <h2 className="nkp-title">
-        <span className="nkp-title-a">{P.title[0]}</span>
-        <span className="nkp-title-b">{P.title[1]}</span>
+        {/* AI-lettered gold movie title (transparent PNG-style webp); the real words stay for screen readers */}
+        <img className="nkp-title-art" src={titleArt.url} alt="" draggable={false} />
+        <span className="nkp-sr">{P.title.join(' ')}</span>
       </h2>
 
       <p className="nkp-tagline">

@@ -20,14 +20,10 @@
 .nkp-root .kmt-name { text-shadow: var(--nkp-tagline-glow); }
 .nkp-root .kmt-badge { background: color-mix(in srgb, var(--nkp-ink) 55%, transparent); text-shadow: var(--nkp-tagline-glow); }
 
-/* Big metallic title */
-.nkp-title { position: absolute; z-index: 5; top: 19cqw; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; text-transform: uppercase; }
-.nkp-title span {
-  display: block; background: var(--nkp-title-metal); -webkit-background-clip: text; background-clip: text; color: transparent;
-  filter: drop-shadow(0 .35cqw 1.4cqw color-mix(in srgb, var(--nkp-gold) 34%, transparent));
-}
-.nkp-title-a { font-family: 'Cinzel', serif; font-weight: 600; font-size: 10.4cqw; line-height: 1.02; letter-spacing: .03em; }
-.nkp-title-b { font-family: 'Cinzel', serif; font-weight: 800; font-size: 15.6cqw; line-height: 1.02; letter-spacing: .01em; margin-top: .6cqw; }
+/* AI-lettered gold movie title (bevelled metal + glow baked into the image) */
+.nkp-title { position: absolute; z-index: 5; top: 16.5cqw; left: 0; right: 0; display: flex; justify-content: center; }
+.nkp-title-art { display: block; width: 90cqw; height: auto; pointer-events: none; user-select: none; }
+.nkp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Italic tagline between hairlines */
 .nkp-tagline {

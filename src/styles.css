@@ -818,7 +818,6 @@
   --nkp-hair: color-mix(in srgb, #f2c15c 46%, transparent);
   --nkp-photo-fade: linear-gradient(180deg, color-mix(in srgb, #04080f 84%, transparent) 0%, color-mix(in srgb, #04080f 36%, transparent) 24%, transparent 42%, transparent 56%, color-mix(in srgb, #04080f 62%, transparent) 74%, color-mix(in srgb, #04080f 95%, transparent) 90%);
   --nkp-vignette: radial-gradient(120% 78% at 50% 42%, transparent 42%, color-mix(in srgb, #04080f 62%, transparent) 100%);
-  --nkp-title-metal: linear-gradient(180deg, #fff8e2 0%, #f7d488 32%, #c98f22 56%, #ffeec0 76%, #e0ab3c 100%);
   --nkp-tagline-glow: 0 .3cqw 1.6cqw color-mix(in srgb, #04080f 85%, transparent);
   --nkp-cta-bg: linear-gradient(180deg, #f7d488 0%, #e2a92f 100%);
   --nkp-cta-shadow: 0 .8cqw 2.4cqw color-mix(in srgb, #04080f 65%, transparent);
