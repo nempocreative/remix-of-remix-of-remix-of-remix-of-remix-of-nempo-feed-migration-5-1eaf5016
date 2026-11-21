@@ -1,0 +1,55 @@
+{
+  "source": "github.com/nempocreative/remix-of-nempo-feed-migration-5",
+  "scope": "Full copy of the source Lovable TanStack project (NEMPO Feed sub-app at /nempo-feed; / redirects there).",
+  "capabilities": [
+    {
+      "capability": "code",
+      "source": "TanStack Start project, same template revision; src/apps/feed sub-app, routes, shared components/lib, tests",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "repo media",
+      "source": "images/videos/fonts committed in src/assets and public/nempo-feed",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "uploaded file bytes",
+      "source": "178 unique media files behind .asset.json pointers owned by other projects; storage is project-scoped, old previews require sign-in, old project not accessible from this workspace",
+      "outcome": "migrate",
+      "status": "pending",
+      "next_action": "need the old project's published URL (or the files) to download and re-upload with lovable-assets"
+    },
+    {
+      "capability": "schema/records/auth/authorization",
+      "source": "none detected (no database, no login)",
+      "outcome": "not_applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "external providers/endpoints/webhooks/schedules/secrets",
+      "source": "none detected (Google Fonts only)",
+      "outcome": "not_applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "cutover",
+      "source": "old project URL",
+      "outcome": "user_decision",
+      "status": "pending",
+      "next_action": "publish when ready"
+    },
+    {
+      "capability": "verification",
+      "source": "45 test files / 187 tests pass; / redirects to /nempo-feed and slides render; only old-storage media 404",
+      "outcome": "verify",
+      "status": "pending",
+      "next_action": "re-check media after re-upload"
+    }
+  ]
+}
