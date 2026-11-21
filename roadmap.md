@@ -10,3 +10,4 @@
 - [x] Slide 56: PNG unduhan dibuat ulang dari desain poster film (3240×4320)
 - [x] Slide 56: header disamakan dengan slide lain; PNG unduhan dibuat ulang
 - [x] Slide 56: footer disamakan dengan footer slide 35; PNG unduhan dibuat ulang
+- [x] Slide 56: judul diganti tulisan emas buatan AI (gaya judul film); PNG unduhan dibuat ulang
