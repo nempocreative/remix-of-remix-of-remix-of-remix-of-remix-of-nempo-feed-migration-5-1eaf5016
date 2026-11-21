@@ -43,42 +43,42 @@
 .nkp-tag span { font-size: 3.4cqw; }
 .nkp-tag strong { font-size: 4.6cqw; font-weight: 400; }
 
-/* "Kenapa bareng NEMPO?" two-line ribbon */
-.nkp-featuring { position: absolute; z-index: 7; top: 98cqw; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; gap: .4cqw; transform: rotate(-2deg); }
+/* "Kenapa bareng NEMPO?" two-line ribbon — sits above the shield logo, clear of the band */
+.nkp-featuring { position: absolute; z-index: 7; top: 71cqw; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; gap: .4cqw; transform: rotate(-2deg); }
 .nkp-featuring span {
-  padding: .7cqw 2.6cqw .8cqw; background: var(--nkp-pink); color: var(--nkp-cream); font-family: 'Lilita One', 'Fredoka', sans-serif;
-  font-size: 3.4cqw; line-height: 1; text-transform: uppercase; box-shadow: var(--nkp-soft-shadow);
+  padding: .6cqw 2.6cqw .7cqw; background: var(--nkp-pink); color: var(--nkp-cream); font-family: 'Lilita One', 'Fredoka', sans-serif;
+  font-size: 3.2cqw; line-height: 1; text-transform: uppercase; box-shadow: var(--nkp-soft-shadow);
 }
 
 /* Purple band with benefits + steps shield */
 .nkp-band {
-  position: absolute; z-index: 5; left: 0; right: 0; top: 103cqw; height: 19cqw; background: var(--nkp-band);
+  position: absolute; z-index: 5; left: 0; right: 0; top: 96cqw; height: 21cqw; background: var(--nkp-band);
   display: grid; grid-template-columns: 1fr 30cqw 1fr; align-items: center; padding: 0 3cqw;
 }
 .nkp-words { display: flex; flex-direction: column; align-items: center; line-height: .9; font-family: 'Lilita One', 'Fredoka', sans-serif; text-transform: uppercase; transform: rotate(-5deg); }
 .nkp-words--left { color: var(--nkp-yellow); text-shadow: var(--nkp-words-shadow); }
 .nkp-words--right { color: var(--nkp-pink-light); text-shadow: var(--nkp-words-shadow); transform: rotate(-3deg); }
-.nkp-w--big { font-size: 5cqw; }
-.nkp-w--small { font-size: 3.2cqw; font-family: 'Fredoka', sans-serif; font-weight: 700; margin: .5cqw 0; color: var(--nkp-white); }
+.nkp-w--big { font-size: 4.8cqw; }
+.nkp-w--small { font-size: 3cqw; font-family: 'Fredoka', sans-serif; font-weight: 700; margin: .5cqw 0; color: var(--nkp-white); }
 
 .nkp-shield {
-  position: relative; z-index: 2; align-self: start; margin-top: -6cqw; height: 25cqw; display: flex; flex-direction: column; align-items: center;
-  padding: 2.6cqw 2.4cqw 0; background: var(--nkp-shield); border: .8cqw solid var(--nkp-yellow); box-shadow: var(--nkp-shield-shadow);
-  border-radius: 3cqw 3cqw 50% 50% / 3cqw 3cqw 40% 40%; color: var(--nkp-white);
+  position: relative; z-index: 2; align-self: start; margin-top: -7.5cqw; height: 26cqw; display: flex; flex-direction: column; align-items: center;
+  padding: 2.6cqw 3.6cqw 1.6cqw; background: var(--nkp-shield); border: .8cqw solid var(--nkp-yellow); box-shadow: var(--nkp-shield-shadow);
+  border-radius: 3cqw 3cqw 50% 50% / 3cqw 3cqw 20% 20%; color: var(--nkp-white);
 }
 .nkp-shield-logo { width: 7cqw; height: 7cqw; margin-top: -6.2cqw; padding: .8cqw; border-radius: 50%; background: var(--nkp-white); border: .6cqw solid var(--nkp-yellow); box-shadow: var(--nkp-soft-shadow); }
 .nkp-shield-logo img { width: 100%; height: 100%; object-fit: contain; }
 .nkp-shield-title { margin: 1cqw 0 1.4cqw; font-family: 'Lilita One', 'Fredoka', sans-serif; font-size: 3cqw; line-height: 1; color: var(--nkp-yellow); text-transform: uppercase; white-space: nowrap; }
-.nkp-steps { display: flex; flex-direction: column; gap: 1.1cqw; width: 100%; }
+.nkp-steps { display: flex; flex-direction: column; gap: .9cqw; width: 100%; }
 .nkp-steps li { display: flex; align-items: center; gap: 1cqw; font-size: 2.2cqw; font-weight: 600; line-height: 1.05; }
 .nkp-steps li span { flex: none; display: grid; place-items: center; width: 3.4cqw; height: 3.4cqw; border-radius: 50%; background: var(--nkp-yellow); color: var(--nkp-purple-deep); font-weight: 700; font-size: 2cqw; }
 
 /* Grass strip with CTA */
 .nkp-grass {
-  position: absolute; z-index: 6; left: 0; right: 0; bottom: 0; height: 12cqw; background: var(--nkp-grass);
+  position: absolute; z-index: 6; left: 0; right: 0; bottom: 0; height: 11.5cqw; background: var(--nkp-grass);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2cqw;
 }
-.nkp-grass::before { content: ''; position: absolute; left: 0; right: 0; top: -2.4cqw; height: 3cqw; background: var(--nkp-bush); }
+.nkp-grass::before { content: ''; position: absolute; left: 0; right: 0; top: -1.6cqw; height: 2.2cqw; background: var(--nkp-bush); }
 .nkp-cta {
   position: relative; display: inline-flex; align-items: center; gap: 1.4cqw; padding: 1.2cqw 5cqw 1.3cqw; background: var(--nkp-pink); color: var(--nkp-cream) !important;
   font-family: 'Lilita One', 'Fredoka', sans-serif; font-size: 3.8cqw; line-height: 1; text-transform: uppercase; white-space: nowrap;

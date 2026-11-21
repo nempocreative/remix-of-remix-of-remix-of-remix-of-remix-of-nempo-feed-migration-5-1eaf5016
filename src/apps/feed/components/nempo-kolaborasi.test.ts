@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { NEMPO_KOLABORASI_CARA_SLIDE, NEMPO_KOLABORASI_SLIDE, NKO_EXPORT, nempoKolaborasi } from './nempo-kolaborasi';
+import {
+  NEMPO_KOLABORASI_CARA_SLIDE, NEMPO_KOLABORASI_SLIDE, NKO_EXPORT, nempoKolaborasi, nempoKolaborasiPoster,
+} from './nempo-kolaborasi';
 
 describe('NEMPO collaboration call for cafes & tourist spots', () => {
   it('is NEMPO Feed slide 55, continued on slide 56', () => {
@@ -15,5 +17,19 @@ describe('NEMPO collaboration call for cafes & tourist spots', () => {
   });
   it('downloads each slide as a 3:4 feed PNG at 3× (3240×4320)', () => {
     expect(NKO_EXPORT).toEqual({ width: 3240, height: 4320 });
+  });
+});
+
+describe('NEMPO Feed slide 56 poster layout', () => {
+  it('keeps the "kamu siapin tempat" promise as the poster headline', () => {
+    expect(nempoKolaborasiPoster.title).toEqual(['Kamu Siapin', 'Tempat,']);
+    expect(nempoKolaborasiPoster.ribbon).toBe('Kami Urus Acaranya!');
+  });
+  it('keeps the three collaboration steps in order', () => {
+    expect(nempoKolaborasiPoster.steps).toEqual(['Chat admin NEMPO', 'Atur konsep & jadwal', 'Event jalan!']);
+    expect(nempoKolaborasiPoster.stepsLabel).toBe('Cara kolaborasi');
+  });
+  it('puts the admin WhatsApp number on the poster CTA', () => {
+    expect(nempoKolaborasiPoster.cta).toBe('Chat Admin · WA 0857 2498 1356');
   });
 });
