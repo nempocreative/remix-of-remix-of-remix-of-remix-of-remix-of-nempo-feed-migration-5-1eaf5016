@@ -266,6 +266,7 @@ import { NEMPO_MALAM_MINGGU_SLIDE } from './components/nempo-malam-minggu';
 import { NempoMalamMingguSlide } from './components/NempoMalamMingguSlide';
 import { NEMPO_KOLABORASI_SLIDE, NEMPO_KOLABORASI_CARA_SLIDE } from './components/nempo-kolaborasi';
 import { NempoKolaborasiSlide } from './components/NempoKolaborasiSlide';
+import { NempoKolaborasiPosterSlide } from './components/NempoKolaborasiPosterSlide';
 import kolaborasi55Png from '@/assets/nempo-feed-55/nempo-feed-55-calling-cafe-wisata.png.asset.json';
 import kolaborasi56Png from '@/assets/nempo-feed-55/nempo-feed-56-cara-kolaborasi.png.asset.json';
 import { NempoTerimaKasihSlide } from './components/NempoTerimaKasihSlide';
@@ -4561,7 +4562,7 @@ function App() {
         ) : isNempoFeed && activeSlide === NEMPO_KOLABORASI_SLIDE ? (
           <NempoKolaborasiSlide page="call" exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === NEMPO_KOLABORASI_CARA_SLIDE ? (
-          <NempoKolaborasiSlide page="cara" exportRef={exportRef} />
+          <NempoKolaborasiPosterSlide exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === 49 ? (
           <NempoDjSlide src={dj49VideoAsset.url} poster={dj49PosterAsset.url} exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === NEMPO_BAJIDORAN_SAWER_SLIDE ? (

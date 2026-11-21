@@ -1,0 +1,97 @@
+/* NEMPO Feed slide 56 — playful festival-style collab poster over a cartoon stage scene. Colors in src/styles.css (.nkp-root). */
+.nkp-root {
+  position: relative; isolation: isolate; width: 100%; aspect-ratio: 3 / 4; overflow: hidden;
+  container-type: inline-size; background: var(--nkp-sky); color: var(--nkp-purple);
+  font-family: 'Fredoka', 'Poppins', sans-serif;
+}
+.nkp-root * { box-sizing: border-box; letter-spacing: 0; }
+.nkp-root p, .nkp-root h2, .nkp-root ol { margin: 0; padding: 0; }
+.nkp-root ol { list-style: none; }
+.nkp-root a { text-decoration: none; color: inherit; }
+
+/* Cartoon stage scene: cafe / tourist spot with performers and audience */
+.nkp-photo { position: absolute; z-index: 0; left: 0; top: -14cqw; width: 100%; height: auto; display: block; }
+.nkp-photo-fade { position: absolute; z-index: 1; inset: 0; pointer-events: none; background: var(--nkp-photo-fade); }
+
+/* Top credit */
+.nkp-presents {
+  position: absolute; z-index: 6; top: 4.4cqw; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 1.4cqw;
+  font-family: 'Poppins', sans-serif; font-size: 2.2cqw; font-weight: 800; color: var(--nkp-purple);
+}
+.nkp-presents img { width: 4.6cqw; height: 4.6cqw; padding: .5cqw; border-radius: 1.2cqw; background: var(--nkp-white); box-shadow: var(--nkp-soft-shadow); object-fit: contain; }
+
+/* Chunky 3D title */
+.nkp-title { position: absolute; z-index: 5; top: 11cqw; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; text-transform: uppercase; font-weight: 700; line-height: .86; color: var(--nkp-purple); text-shadow: var(--nkp-title-3d); }
+.nkp-title-a { font-size: 13cqw; transform: rotate(-3deg); }
+.nkp-title-b { font-size: 17cqw; transform: rotate(-3deg) translateX(1cqw); }
+
+/* Pink ribbon banner */
+.nkp-ribbon { position: absolute; z-index: 6; top: 43cqw; left: 50%; transform: translateX(-50%) rotate(-5deg); }
+.nkp-ribbon span {
+  display: block; padding: 1.6cqw 8cqw 1.8cqw; background: var(--nkp-pink); color: var(--nkp-cream); white-space: nowrap;
+  font-family: 'Lilita One', 'Fredoka', sans-serif; font-size: 5.4cqw; line-height: 1; text-transform: uppercase; text-shadow: var(--nkp-ribbon-text-shadow);
+  clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%); box-shadow: var(--nkp-soft-shadow);
+}
+
+/* Torn-paper venue tag */
+.nkp-tag {
+  position: absolute; z-index: 6; top: 50cqw; right: 5cqw; display: flex; flex-direction: column; align-items: flex-start; gap: .4cqw;
+  padding: 1.8cqw 3cqw 2cqw; background: var(--nkp-paper); box-shadow: var(--nkp-soft-shadow); transform: rotate(5deg);
+  clip-path: polygon(0 4%, 8% 0, 22% 3%, 40% 0, 58% 4%, 76% 0, 92% 3%, 100% 0, 98% 30%, 100% 60%, 97% 100%, 80% 96%, 62% 100%, 44% 96%, 26% 100%, 10% 96%, 0 100%, 2% 66%, 0 34%);
+  font-family: 'Lilita One', 'Fredoka', sans-serif; text-transform: uppercase; line-height: .95; color: var(--nkp-blue-deep);
+}
+.nkp-tag span { font-size: 3.4cqw; }
+.nkp-tag strong { font-size: 4.6cqw; font-weight: 400; }
+
+/* "Kenapa bareng NEMPO?" two-line ribbon */
+.nkp-featuring { position: absolute; z-index: 7; top: 98cqw; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; gap: .4cqw; transform: rotate(-2deg); }
+.nkp-featuring span {
+  padding: .7cqw 2.6cqw .8cqw; background: var(--nkp-pink); color: var(--nkp-cream); font-family: 'Lilita One', 'Fredoka', sans-serif;
+  font-size: 3.4cqw; line-height: 1; text-transform: uppercase; box-shadow: var(--nkp-soft-shadow);
+}
+
+/* Purple band with benefits + steps shield */
+.nkp-band {
+  position: absolute; z-index: 5; left: 0; right: 0; top: 103cqw; height: 19cqw; background: var(--nkp-band);
+  display: grid; grid-template-columns: 1fr 30cqw 1fr; align-items: center; padding: 0 3cqw;
+}
+.nkp-words { display: flex; flex-direction: column; align-items: center; line-height: .9; font-family: 'Lilita One', 'Fredoka', sans-serif; text-transform: uppercase; transform: rotate(-5deg); }
+.nkp-words--left { color: var(--nkp-yellow); text-shadow: var(--nkp-words-shadow); }
+.nkp-words--right { color: var(--nkp-pink-light); text-shadow: var(--nkp-words-shadow); transform: rotate(-3deg); }
+.nkp-w--big { font-size: 5cqw; }
+.nkp-w--small { font-size: 3.2cqw; font-family: 'Fredoka', sans-serif; font-weight: 700; margin: .5cqw 0; color: var(--nkp-white); }
+
+.nkp-shield {
+  position: relative; z-index: 2; align-self: start; margin-top: -6cqw; height: 25cqw; display: flex; flex-direction: column; align-items: center;
+  padding: 2.6cqw 2.4cqw 0; background: var(--nkp-shield); border: .8cqw solid var(--nkp-yellow); box-shadow: var(--nkp-shield-shadow);
+  border-radius: 3cqw 3cqw 50% 50% / 3cqw 3cqw 40% 40%; color: var(--nkp-white);
+}
+.nkp-shield-logo { width: 7cqw; height: 7cqw; margin-top: -6.2cqw; padding: .8cqw; border-radius: 50%; background: var(--nkp-white); border: .6cqw solid var(--nkp-yellow); box-shadow: var(--nkp-soft-shadow); }
+.nkp-shield-logo img { width: 100%; height: 100%; object-fit: contain; }
+.nkp-shield-title { margin: 1cqw 0 1.4cqw; font-family: 'Lilita One', 'Fredoka', sans-serif; font-size: 3cqw; line-height: 1; color: var(--nkp-yellow); text-transform: uppercase; white-space: nowrap; }
+.nkp-steps { display: flex; flex-direction: column; gap: 1.1cqw; width: 100%; }
+.nkp-steps li { display: flex; align-items: center; gap: 1cqw; font-size: 2.2cqw; font-weight: 600; line-height: 1.05; }
+.nkp-steps li span { flex: none; display: grid; place-items: center; width: 3.4cqw; height: 3.4cqw; border-radius: 50%; background: var(--nkp-yellow); color: var(--nkp-purple-deep); font-weight: 700; font-size: 2cqw; }
+
+/* Grass strip with CTA */
+.nkp-grass {
+  position: absolute; z-index: 6; left: 0; right: 0; bottom: 0; height: 12cqw; background: var(--nkp-grass);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2cqw;
+}
+.nkp-grass::before { content: ''; position: absolute; left: 0; right: 0; top: -2.4cqw; height: 3cqw; background: var(--nkp-bush); }
+.nkp-cta {
+  position: relative; display: inline-flex; align-items: center; gap: 1.4cqw; padding: 1.2cqw 5cqw 1.3cqw; background: var(--nkp-pink); color: var(--nkp-cream) !important;
+  font-family: 'Lilita One', 'Fredoka', sans-serif; font-size: 3.8cqw; line-height: 1; text-transform: uppercase; white-space: nowrap;
+  clip-path: polygon(0 0, 100% 0, 97% 50%, 100% 100%, 0 100%, 3% 50%); text-shadow: var(--nkp-ribbon-text-shadow);
+}
+.nkp-cta svg { width: 3.8cqw; height: 3.8cqw; }
+.nkp-channels { position: relative; display: flex; gap: 4cqw; font-size: 2.2cqw; font-weight: 700; color: var(--nkp-white); }
+.nkp-channels a { display: inline-flex; align-items: center; gap: .8cqw; }
+.nkp-channels svg { width: 2.4cqw; height: 2.4cqw; }
+
+/* Print-like grain over everything */
+.nkp-grain { position: absolute; inset: 0; z-index: 20; pointer-events: none; background: var(--nkp-grain); background-size: 30cqw 30cqw; mix-blend-mode: multiply; opacity: .12; }
+
+@media (prefers-reduced-motion: reduce) {
+  .nkp-shield { animation: none; }
+}

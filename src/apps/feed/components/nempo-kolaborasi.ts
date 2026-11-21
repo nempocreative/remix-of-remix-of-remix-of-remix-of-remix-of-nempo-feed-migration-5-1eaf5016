@@ -46,3 +46,34 @@ export const nempoKolaborasi = {
   whatsapp: { label: 'Ajukan kolaborasi via WhatsApp', number: nempoCs.whatsapp.number, href: nempoCs.whatsapp.href },
   channels: nempoCs.channels,
 } as const;
+
+/**
+ * Slide 56 poster copy — the "cara" content laid out as a playful festival-style poster over a photo of a
+ * cafe / tourist-spot stage with performers and audience, after the owner's kids-festival references.
+ */
+export const nempoKolaborasiPoster = {
+  presents: 'NEMPO.ID × Kala Muda Present',
+  title: ['Kamu Siapin', 'Tempat,'],
+  ribbon: 'Kami Urus Acaranya!',
+  venue: ['Cafe &', 'Tempat Wisata'],
+  featuring: ['Kenapa bareng', 'NEMPO?'],
+  left: [
+    { text: 'Konsep &', size: 'big' },
+    { text: 'Rundown', size: 'big' },
+    { text: '+ talent', size: 'small' },
+    { text: 'Acara!', size: 'big' },
+  ],
+  right: [
+    { text: 'Promosi', size: 'big' },
+    { text: 'sosmed &', size: 'small' },
+    { text: 'Dokumen', size: 'big' },
+    { text: 'tasi!', size: 'big' },
+  ],
+  stepsLabel: nempoKolaborasi.cara.stepsLabel,
+  steps: nempoKolaborasi.cara.steps,
+  cta: `Chat Admin · WA ${nempoKolaborasi.whatsapp.number}`,
+} as const satisfies {
+  left: ReadonlyArray<{ text: string; size: 'big' | 'small' }>;
+  right: ReadonlyArray<{ text: string; size: 'big' | 'small' }>;
+  [key: string]: unknown;
+};
