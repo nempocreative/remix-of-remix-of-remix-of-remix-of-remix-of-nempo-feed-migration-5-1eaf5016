@@ -27,15 +27,15 @@
 .nkp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Sticker tagline */
-.nkp-tagline {
+.nkp-root .nkp-tagline {
   position: absolute; z-index: 6; top: 47cqw; left: 50%; transform: translateX(-50%) rotate(-3deg);
-  padding: .9cqw 3.2cqw 1.1cqw; border-radius: 99cqw; background: var(--nkp-sun); color: var(--nkp-navy);
+  padding: 1.4cqw 6cqw 1.6cqw; border-radius: 99cqw; background: var(--nkp-sun); color: var(--nkp-navy);
   font-weight: 700; font-size: 4.4cqw; line-height: 1; white-space: nowrap; box-shadow: 0 .6cqw 0 var(--nkp-sun-deep);
 }
 
 /* Release line */
 .nkp-release {
-  position: absolute; z-index: 6; top: 54cqw; left: 0; right: 0; text-align: center;
+  position: absolute; z-index: 6; top: 55.5cqw; left: 0; right: 0; text-align: center;
   font-size: 2.5cqw; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; text-shadow: var(--nkp-text-pop);
 }
 
