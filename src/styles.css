@@ -820,7 +820,6 @@
   --nkp-card: color-mix(in srgb, #ffffff 92%, transparent);
   --nkp-pop: 0 .7cqw 0 #1453b8;
   --nkp-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
-  --nkp-title-shadow: drop-shadow(0 .8cqw 0 #1453b8) drop-shadow(0 1.4cqw 1.6cqw color-mix(in srgb, #0b2f74 40%, transparent));
 }
 /* Nempo Feed slide 48: 3:4 sawer clip — same natural palette as slides 46 and 47. */
 .nbf-root {

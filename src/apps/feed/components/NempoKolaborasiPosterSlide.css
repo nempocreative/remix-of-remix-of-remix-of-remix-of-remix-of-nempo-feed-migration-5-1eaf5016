@@ -21,9 +21,9 @@
 .nkp-root .kmt-name { text-shadow: var(--nkp-text-pop); }
 .nkp-root .kmt-badge { background: color-mix(in srgb, var(--nkp-navy) 60%, transparent); }
 
-/* AI-lettered bouncy white title with a cartoon blue drop */
+/* AI-lettered bouncy white title, no shadow */
 .nkp-title { position: absolute; z-index: 5; top: 16cqw; left: 0; right: 0; display: flex; justify-content: center; }
-.nkp-title-art { display: block; width: 48cqw; height: auto; filter: var(--nkp-title-shadow); pointer-events: none; user-select: none; }
+.nkp-title-art { display: block; width: 48cqw; height: auto; pointer-events: none; user-select: none; }
 .nkp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Sticker tagline */
