@@ -13,3 +13,4 @@
 - [x] Slide 56: judul diganti tulisan emas buatan AI (gaya judul film); PNG unduhan dibuat ulang
 - [x] Slide 56: judul pakai gaya huruf poster contoh "Suara Petualang!" (putih); PNG unduhan dibuat ulang
 - [x] Slide 56: latar diganti gambar panggung kelapa dari pemilik, semua tulisan dibuat lucu/ceria; PNG unduhan dibuat ulang
+- [x] Slide 56: baris "Segera di cafe & tempat wisata" dimiringkan sama seperti stiker di atasnya; PNG unduhan dibuat ulang
