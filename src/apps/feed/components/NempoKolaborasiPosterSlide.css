@@ -20,14 +20,14 @@
 .nkp-root .kmt-name { text-shadow: var(--nkp-tagline-glow); }
 .nkp-root .kmt-badge { background: color-mix(in srgb, var(--nkp-ink) 55%, transparent); text-shadow: var(--nkp-tagline-glow); }
 
-/* AI-lettered gold movie title (bevelled metal + glow baked into the image) */
-.nkp-title { position: absolute; z-index: 5; top: 16.5cqw; left: 0; right: 0; display: flex; justify-content: center; }
-.nkp-title-art { display: block; width: 90cqw; height: auto; pointer-events: none; user-select: none; }
+/* AI-lettered playful white title (bouncy hand-lettered style from the owner's reference poster) */
+.nkp-title { position: absolute; z-index: 5; top: 17.5cqw; left: 0; right: 0; display: flex; justify-content: center; }
+.nkp-title-art { display: block; width: 72cqw; filter: var(--nkp-title-shadow); height: auto; pointer-events: none; user-select: none; }
 .nkp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Italic tagline between hairlines */
 .nkp-tagline {
-  position: absolute; z-index: 6; top: 49.5cqw; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 2.4cqw;
+  position: absolute; z-index: 6; top: 55.5cqw; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 2.4cqw;
   font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 600; font-size: 5.4cqw; line-height: 1;
   letter-spacing: .04em; color: var(--nkp-gold-soft); text-shadow: var(--nkp-tagline-glow);
 }
@@ -35,7 +35,7 @@
 
 /* Release line */
 .nkp-release {
-  position: absolute; z-index: 6; top: 57.5cqw; left: 0; right: 0; text-align: center;
+  position: absolute; z-index: 6; top: 63.5cqw; left: 0; right: 0; text-align: center;
   font-size: 2.3cqw; font-weight: 400; letter-spacing: .3em; text-transform: uppercase; color: color-mix(in srgb, var(--nkp-cream) 78%, transparent);
   text-shadow: var(--nkp-tagline-glow);
 }
