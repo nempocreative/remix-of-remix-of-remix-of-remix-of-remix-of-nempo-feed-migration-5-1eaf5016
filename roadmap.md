@@ -9,3 +9,4 @@
 - [x] Slide 56: desain ulang jadi poster film "gelap sinematik" (judul emas, tagline miring, baris rilis, blok kredit) — menggantikan poster ceria
 - [x] Slide 56: PNG unduhan dibuat ulang dari desain poster film (3240×4320)
 - [x] Slide 56: header disamakan dengan slide lain; PNG unduhan dibuat ulang
+- [x] Slide 56: footer disamakan dengan footer slide 35; PNG unduhan dibuat ulang

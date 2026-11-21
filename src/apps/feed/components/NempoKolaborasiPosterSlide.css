@@ -44,9 +44,9 @@
   text-shadow: var(--nkp-tagline-glow);
 }
 
-/* Billing block: benefits, steps, CTA and socials */
+/* Billing block: benefits and steps above the shared slide 35 footer */
 .nkp-billing {
-  position: absolute; z-index: 7; left: 0; right: 0; bottom: 0; padding: 0 6cqw 4.4cqw;
+  position: absolute; z-index: 7; left: 0; right: 0; bottom: 15.5cqw; padding: 0 6cqw;
   display: flex; flex-direction: column; align-items: center; gap: 1.7cqw;
 }
 .nkp-credits {
@@ -68,29 +68,8 @@
   border: .16cqw solid var(--nkp-hair); font-size: 1.9cqw; font-weight: 600; color: var(--nkp-gold-soft);
 }
 
-.nkp-cta {
-  display: inline-flex; align-items: center; gap: 1.6cqw; margin-top: .4cqw; padding: 1.5cqw 5.4cqw 1.6cqw;
-  background: var(--nkp-cta-bg); color: var(--nkp-ink) !important; border-radius: .4cqw; box-shadow: var(--nkp-cta-shadow);
-  font-size: 3.3cqw; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap;
-}
-.nkp-cta svg { width: 3.4cqw; height: 3.4cqw; }
-
-.nkp-channels {
-  position: relative; display: flex; align-items: center; justify-content: center; gap: 3.2cqw;
-  width: 78cqw; margin-top: 1.4cqw; padding-top: 2cqw;
-  font-size: 2.3cqw; font-weight: 500; letter-spacing: .18em; text-transform: uppercase;
-  color: color-mix(in srgb, var(--nkp-cream) 88%, transparent);
-}
-.nkp-channels::before {
-  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px;
-  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--nkp-gold) 70%, transparent), transparent);
-}
-.nkp-channels a { display: inline-flex; align-items: center; gap: 1.1cqw; }
-.nkp-channels a + a::before {
-  content: ""; width: .8cqw; height: .8cqw; margin-right: 2.1cqw; transform: rotate(45deg);
-  background: var(--nkp-gold);
-}
-.nkp-channels svg { width: 2.6cqw; height: 2.6cqw; color: var(--nkp-gold); }
+/* The shared NempoFooter supplies the same .kmt-footer pills as slide 35. */
+.nkp-root .kmt-footer { z-index: 8; font-family: 'DM Sans', sans-serif; }
 
 /* Print-like grain over everything */
 .nkp-grain { position: absolute; inset: 0; z-index: 20; pointer-events: none; background: var(--nkp-grain); background-size: 30cqw 30cqw; mix-blend-mode: overlay; opacity: .1; }

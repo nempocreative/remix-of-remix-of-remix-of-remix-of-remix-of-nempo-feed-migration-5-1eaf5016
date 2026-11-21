@@ -1,8 +1,7 @@
 import type { RefObject } from 'react';
-import { FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import stagePhoto from '@/assets/nempo-feed-56/nempo-feed-56-panggung-film.jpg.asset.json';
-import { NempoHeader } from './KalaMudaRecruitSlide';
-import { nempoKolaborasi as K, nempoKolaborasiPoster as P } from './nempo-kolaborasi';
+import { NempoFooter, NempoHeader } from './KalaMudaRecruitSlide';
+import { nempoKolaborasiPoster as P } from './nempo-kolaborasi';
 import './NempoKolaborasiPosterSlide.css';
 
 /**
@@ -12,12 +11,11 @@ import './NempoKolaborasiPosterSlide.css';
  * spot with a silhouetted audience.
  */
 export function NempoKolaborasiPosterSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
-  const { whatsapp, channels } = K;
   return (
     <section
       ref={exportRef as RefObject<HTMLElement>}
       className="nkp-root kmt-root"
-      aria-label={`${P.title.join(' ')} ${P.tagline} ${P.credits.join(', ')}. ${P.stepsLabel}: ${P.steps.join(', ')}. WhatsApp ${whatsapp.number}`}
+      aria-label={`${P.title.join(' ')} ${P.tagline} ${P.credits.join(', ')}. ${P.stepsLabel}: ${P.steps.join(', ')}. ${P.cta}`}
     >
       <img
         className="nkp-photo"
@@ -60,19 +58,9 @@ export function NempoKolaborasiPosterSlide({ exportRef }: { exportRef?: RefObjec
           ))}
         </ol>
 
-        <a className="nkp-cta" href={whatsapp.href} target="_blank" rel="noreferrer">
-          <FaWhatsapp aria-hidden="true" />{P.cta}
-        </a>
-
-        <div className="nkp-channels">
-          {channels.map(({ key, handle, href }) => (
-            <a key={key} href={href} target="_blank" rel="noreferrer">
-              {key === 'instagram' ? <FaInstagram aria-hidden="true" /> : <FaTiktok aria-hidden="true" />}
-              {handle}
-            </a>
-          ))}
-        </div>
       </div>
+
+      <NempoFooter />
 
       <span className="nkp-grain" aria-hidden="true" />
     </section>
