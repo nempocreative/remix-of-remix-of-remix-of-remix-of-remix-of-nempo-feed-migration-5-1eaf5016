@@ -821,6 +821,23 @@
   --nkp-pop: 0 .7cqw 0 #1453b8;
   --nkp-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
 }
+/* Nempo Feed slide 57: Car Free Day poster in slide 56's bright playful palette. */
+.ncfd-root {
+  --ncfd-sky: linear-gradient(180deg, #0a7fe8 0%, #1b98fb 22%, #2aa6fd 30%);
+  --ncfd-sky-tint: linear-gradient(180deg, color-mix(in srgb, #0a62cc 82%, transparent) 0%, color-mix(in srgb, #0f7ae6 62%, transparent) 50%, transparent 100%);
+  --ncfd-title-pop: drop-shadow(0 .55cqw 0 #1453b8) drop-shadow(0 0 1.6cqw color-mix(in srgb, #0b3f9a 60%, transparent));
+  --ncfd-white: #ffffff;
+  --ncfd-navy: #15386f;
+  --ncfd-sun: #ffd23f;
+  --ncfd-sun-deep: #e8901c;
+  --ncfd-pink: #ff7fb4;
+  --ncfd-pink-deep: #e2457f;
+  --ncfd-mint: #5fe0b0;
+  --ncfd-lilac: #b79cff;
+  --ncfd-card: color-mix(in srgb, #ffffff 92%, transparent);
+  --ncfd-pop: 0 .7cqw 0 #1453b8;
+  --ncfd-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
+}
 /* Nempo Feed slide 48: 3:4 sawer clip — same natural palette as slides 46 and 47. */
 .nbf-root {
   --nbf-night: #162d26;
