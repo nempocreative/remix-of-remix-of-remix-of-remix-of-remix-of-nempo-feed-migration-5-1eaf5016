@@ -1,20 +1,22 @@
 import type { RefObject } from 'react';
 import { FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import stagePhoto from '@/assets/nempo-feed-56/nempo-feed-56-panggung-film.jpg.asset.json';
+import { NempoHeader } from './KalaMudaRecruitSlide';
 import { nempoKolaborasi as K, nempoKolaborasiPoster as P } from './nempo-kolaborasi';
 import './NempoKolaborasiPosterSlide.css';
 
 /**
- * NEMPO Feed slide 56 (3:4): the "cara kolaborasi" content as a movie one-sheet — studio lockup and a big
- * metallic title on the night sky, italic tagline and release line, then a billing block of the benefits, the
- * three steps and the WhatsApp CTA, over a lit stage at a cafe / tourist spot with a silhouetted audience.
+ * NEMPO Feed slide 56 (3:4): the "cara kolaborasi" content as a movie one-sheet — the same Nempo Feed header
+ * every other slide uses, a big metallic title on the night sky, italic tagline and release line, then a
+ * billing block of the benefits, the three steps and the WhatsApp CTA, over a lit stage at a cafe / tourist
+ * spot with a silhouetted audience.
  */
 export function NempoKolaborasiPosterSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   const { whatsapp, channels } = K;
   return (
     <section
       ref={exportRef as RefObject<HTMLElement>}
-      className="nkp-root"
+      className="nkp-root kmt-root"
       aria-label={`${P.title.join(' ')} ${P.tagline} ${P.credits.join(', ')}. ${P.stepsLabel}: ${P.steps.join(', ')}. WhatsApp ${whatsapp.number}`}
     >
       <img
@@ -26,11 +28,7 @@ export function NempoKolaborasiPosterSlide({ exportRef }: { exportRef?: RefObjec
       <span className="nkp-photo-fade" aria-hidden="true" />
       <span className="nkp-vignette" aria-hidden="true" />
 
-      <p className="nkp-presents">
-        <img src="/nempo-feed/assets/nempo-new.webp" alt="" draggable={false} />
-        {P.presents}
-      </p>
-      <p className="nkp-badge">{P.badge}</p>
+      <NempoHeader badge={P.badge} />
 
       <h2 className="nkp-title">
         <span className="nkp-title-a">{P.title[0]}</span>

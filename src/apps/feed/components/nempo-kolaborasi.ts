@@ -48,12 +48,11 @@ export const nempoKolaborasi = {
 } as const;
 
 /**
- * Slide 56 poster copy — the "cara" content laid out as a movie one-sheet: studio lockup, big metallic title,
- * italic tagline, release line, then a billing block of the benefits, the three steps and the WhatsApp CTA,
- * over a night stage at a cafe / tourist spot with performers and a silhouetted audience.
+ * Slide 56 poster copy — the "cara" content laid out as a movie one-sheet under the shared Nempo Feed header:
+ * big metallic title, italic tagline, release line, then a billing block of the benefits, the three steps and
+ * the WhatsApp CTA, over a night stage at a cafe / tourist spot with performers and a silhouetted audience.
  */
 export const nempoKolaborasiPoster = {
-  presents: 'NEMPO.ID × Kala Muda Present',
   badge: 'Open Collab',
   title: ['Kamu Siapin', 'Tempat,'],
   tagline: 'Kami Urus Acaranya!',
