@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "fe1d3e18-19bd-4098-a9f0-aac74598e92c",
-  "project_id": "cf7eb9eb-7230-4299-ad0f-3a5231fd2b24",
-  "url": "/__l5e/assets-v1/fe1d3e18-19bd-4098-a9f0-aac74598e92c/nempo-feed-56-cara-kolaborasi.png",
-  "r2_key": "a/v1/cf7eb9eb-7230-4299-ad0f-3a5231fd2b24/fe1d3e18-19bd-4098-a9f0-aac74598e92c/nempo-feed-56-cara-kolaborasi.png",
-  "original_filename": "nempo-feed-56-cara-kolaborasi.png",
-  "size": 6926669,
   "content_type": "image/png",
-  "created_at": "2026-11-21T21:06:32Z"
+  "created_at": "2026-11-21T21:06:32Z",
+  "original_filename": "nempo-feed-56-cara-kolaborasi.png",
+  "project_id": "38667576-812a-41b9-95dd-aa8f82b7e104",
+  "r2_key": "a/v1/38667576-812a-41b9-95dd-aa8f82b7e104/fe1d3e18-19bd-4098-a9f0-aac74598e92c/nempo-feed-56-cara-kolaborasi.png",
+  "size": 6926669,
+  "url": "/__l5e/assets-v1/fe1d3e18-19bd-4098-a9f0-aac74598e92c/nempo-feed-56-cara-kolaborasi.png",
+  "version": 1
 }
