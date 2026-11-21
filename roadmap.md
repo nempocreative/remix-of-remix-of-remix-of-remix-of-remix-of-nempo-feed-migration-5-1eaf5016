@@ -8,3 +8,4 @@
 - [x] Slide 55 & 56: tombol Download PNG dibuat ulang dari pratinjau (3240×4320, file milik proyek ini) — dulu menunjuk berkas proyek lama yang 404
 - [x] Slide 56: desain ulang jadi poster film "gelap sinematik" (judul emas, tagline miring, baris rilis, blok kredit) — menggantikan poster ceria
 - [x] Slide 56: PNG unduhan dibuat ulang dari desain poster film (3240×4320)
+- [x] Slide 56: header disamakan dengan slide lain; PNG unduhan dibuat ulang
