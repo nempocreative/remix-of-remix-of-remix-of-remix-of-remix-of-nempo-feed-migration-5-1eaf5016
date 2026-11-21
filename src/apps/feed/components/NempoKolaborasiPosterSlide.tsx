@@ -1,15 +1,15 @@
 import type { RefObject } from 'react';
-import stagePhoto from '@/assets/nempo-feed-56/nempo-feed-56-panggung-film.jpg.asset.json';
+import stageArt from '@/assets/nempo-feed-56/nempo-feed-56-panggung-kelapa.webp.asset.json';
 import titleArt from '@/assets/nempo-feed-56/nempo-feed-56-judul-putih.webp.asset.json';
 import { NempoFooter, NempoHeader } from './KalaMudaRecruitSlide';
 import { nempoKolaborasiPoster as P } from './nempo-kolaborasi';
 import './NempoKolaborasiPosterSlide.css';
 
 /**
- * NEMPO Feed slide 56 (3:4): the "cara kolaborasi" content as a movie one-sheet — the same Nempo Feed header
- * every other slide uses, an AI-lettered playful white title on the night sky, italic tagline and release line, then a
- * billing block of the benefits, the three steps and the WhatsApp CTA, over a lit stage at a cafe / tourist
- * spot with a silhouetted audience.
+ * NEMPO Feed slide 56 (3:4): the "cara kolaborasi" content as a bright, playful poster — the same Nempo Feed
+ * header every other slide uses, an AI-lettered bouncy white title in the sky, a sticker tagline, then a white
+ * card with the benefits and the three steps above the shared footer, over the owner's coconut-stage artwork
+ * (a frog singer on a tropical stage inside a coconut, crowd with light sticks, open sea).
  */
 export function NempoKolaborasiPosterSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   return (
@@ -20,36 +20,27 @@ export function NempoKolaborasiPosterSlide({ exportRef }: { exportRef?: RefObjec
     >
       <img
         className="nkp-photo"
-        src={stagePhoto.url}
-        alt="Panggung live musik di cafe perbukitan pada malam hari: penyanyi, gitaris dan penabuh kendang di sorot lampu, penonton jadi siluet di depan panggung."
+        src={stageArt.url}
+        alt="Ilustrasi 3D panggung konser di dalam buah kelapa di tengah laut: katak berkacamata bernyanyi, penonton mengangkat lightstick, pohon kelapa dan lampu panggung warna-warni."
         draggable={false}
       />
-      <span className="nkp-photo-fade" aria-hidden="true" />
-      <span className="nkp-vignette" aria-hidden="true" />
 
       <NempoHeader badge={P.badge} />
 
       <h2 className="nkp-title">
-        {/* AI-lettered playful white title (transparent PNG-style webp); the real words stay for screen readers */}
+        {/* AI-lettered bouncy white title (transparent webp); the real words stay for screen readers */}
         <img className="nkp-title-art" src={titleArt.url} alt="" draggable={false} />
         <span className="nkp-sr">{P.title.join(' ')}</span>
       </h2>
 
-      <p className="nkp-tagline">
-        <span aria-hidden="true" />
-        {P.tagline}
-        <span aria-hidden="true" />
-      </p>
+      <p className="nkp-tagline">{P.tagline}</p>
       <p className="nkp-release">{P.release}</p>
 
       <div className="nkp-billing">
         <p className="nkp-credits">
           <strong>{P.creditsLabel}</strong>
-          {P.credits.map((c, i) => (
-            <span key={c}>
-              {i > 0 ? <em aria-hidden="true">·</em> : null}
-              {c}
-            </span>
+          {P.credits.map((c) => (
+            <span key={c}>{c}</span>
           ))}
         </p>
 
@@ -59,12 +50,9 @@ export function NempoKolaborasiPosterSlide({ exportRef }: { exportRef?: RefObjec
             <li key={s}><span>{i + 1}</span>{s}</li>
           ))}
         </ol>
-
       </div>
 
       <NempoFooter />
-
-      <span className="nkp-grain" aria-hidden="true" />
     </section>
   );
 }

@@ -12,3 +12,4 @@
 - [x] Slide 56: footer disamakan dengan footer slide 35; PNG unduhan dibuat ulang
 - [x] Slide 56: judul diganti tulisan emas buatan AI (gaya judul film); PNG unduhan dibuat ulang
 - [x] Slide 56: judul pakai gaya huruf poster contoh "Suara Petualang!" (putih); PNG unduhan dibuat ulang
+- [x] Slide 56: latar diganti gambar panggung kelapa dari pemilik, semua tulisan dibuat lucu/ceria; PNG unduhan dibuat ulang

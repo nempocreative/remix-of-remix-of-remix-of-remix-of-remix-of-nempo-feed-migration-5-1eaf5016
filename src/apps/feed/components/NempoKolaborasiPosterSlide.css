@@ -1,75 +1,66 @@
-/* NEMPO Feed slide 56 — movie one-sheet collab poster over a night stage scene. Colors in src/styles.css (.nkp-root). */
+/* NEMPO Feed slide 56 — bright playful collab poster over the coconut-stage artwork. Colors in src/styles.css (.nkp-root). */
 .nkp-root {
   position: relative; isolation: isolate; width: 100%; aspect-ratio: 3 / 4; overflow: hidden;
-  container-type: inline-size; background: var(--nkp-ink); color: var(--nkp-cream);
-  font-family: 'Oswald', 'Poppins', sans-serif;
+  container-type: inline-size; background: var(--nkp-sky); color: var(--nkp-white);
+  font-family: 'Fredoka', 'Poppins', sans-serif;
 }
 .nkp-root * { box-sizing: border-box; }
 .nkp-root p, .nkp-root h2, .nkp-root ol { margin: 0; padding: 0; }
 .nkp-root ol { list-style: none; }
 .nkp-root a { text-decoration: none; color: inherit; }
 
-/* Night stage at a cafe / tourist spot: performers lit on stage, audience in silhouette */
-.nkp-photo { position: absolute; z-index: 0; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 52%; display: block; }
-.nkp-photo-fade { position: absolute; z-index: 1; inset: 0; pointer-events: none; background: var(--nkp-photo-fade); }
-.nkp-vignette { position: absolute; z-index: 2; inset: 0; pointer-events: none; background: var(--nkp-vignette); }
+/* Coconut stage artwork, sitting low so the sky above holds the title; its top edge melts into the sky fill */
+.nkp-photo {
+  position: absolute; z-index: 0; left: 0; top: 35cqw; width: 100%; height: auto; display: block;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 6cqw); mask-image: linear-gradient(180deg, transparent 0, #000 6cqw);
+}
 
-/* Shared Nempo Feed header (same as slide 55 and the other slides): keep its own fonts and colors */
+/* Shared Nempo Feed header (same as the other slides): keep its own fonts and colors */
 .nkp-root .kmt-header { z-index: 8; font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; }
 .nkp-root .kmt-header * { letter-spacing: initial; }
-.nkp-root .kmt-name { text-shadow: var(--nkp-tagline-glow); }
-.nkp-root .kmt-badge { background: color-mix(in srgb, var(--nkp-ink) 55%, transparent); text-shadow: var(--nkp-tagline-glow); }
+.nkp-root .kmt-name { text-shadow: var(--nkp-text-pop); }
+.nkp-root .kmt-badge { background: color-mix(in srgb, var(--nkp-navy) 60%, transparent); }
 
-/* AI-lettered playful white title (bouncy hand-lettered style from the owner's reference poster) */
-.nkp-title { position: absolute; z-index: 5; top: 17.5cqw; left: 0; right: 0; display: flex; justify-content: center; }
-.nkp-title-art { display: block; width: 72cqw; filter: var(--nkp-title-shadow); height: auto; pointer-events: none; user-select: none; }
+/* AI-lettered bouncy white title with a cartoon blue drop */
+.nkp-title { position: absolute; z-index: 5; top: 16.5cqw; left: 0; right: 0; display: flex; justify-content: center; }
+.nkp-title-art { display: block; width: 60cqw; height: auto; filter: var(--nkp-title-shadow); pointer-events: none; user-select: none; }
 .nkp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-/* Italic tagline between hairlines */
+/* Sticker tagline */
 .nkp-tagline {
-  position: absolute; z-index: 6; top: 55.5cqw; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 2.4cqw;
-  font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 600; font-size: 5.4cqw; line-height: 1;
-  letter-spacing: .04em; color: var(--nkp-gold-soft); text-shadow: var(--nkp-tagline-glow);
+  position: absolute; z-index: 6; top: 47cqw; left: 50%; transform: translateX(-50%) rotate(-3deg);
+  padding: .9cqw 3.2cqw 1.1cqw; border-radius: 99cqw; background: var(--nkp-sun); color: var(--nkp-navy);
+  font-weight: 700; font-size: 4.4cqw; line-height: 1; white-space: nowrap; box-shadow: 0 .6cqw 0 var(--nkp-sun-deep);
 }
-.nkp-tagline span { display: block; width: 11cqw; height: .16cqw; background: var(--nkp-hair); }
 
 /* Release line */
 .nkp-release {
-  position: absolute; z-index: 6; top: 63.5cqw; left: 0; right: 0; text-align: center;
-  font-size: 2.3cqw; font-weight: 400; letter-spacing: .3em; text-transform: uppercase; color: color-mix(in srgb, var(--nkp-cream) 78%, transparent);
-  text-shadow: var(--nkp-tagline-glow);
+  position: absolute; z-index: 6; top: 54cqw; left: 0; right: 0; text-align: center;
+  font-size: 2.5cqw; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; text-shadow: var(--nkp-text-pop);
 }
 
-/* Billing block: benefits and steps above the shared slide 35 footer */
+/* White card: benefits and steps above the shared slide 35 footer */
 .nkp-billing {
-  position: absolute; z-index: 7; left: 0; right: 0; bottom: 15.5cqw; padding: 0 6cqw;
-  display: flex; flex-direction: column; align-items: center; gap: 1.7cqw;
+  position: absolute; z-index: 7; left: 5cqw; right: 5cqw; bottom: 15cqw; padding: 1.8cqw 2.6cqw 2cqw;
+  display: flex; flex-direction: column; align-items: center; gap: 1.2cqw;
+  background: var(--nkp-card); border-radius: 4cqw; box-shadow: var(--nkp-pop); color: var(--nkp-navy);
 }
-.nkp-credits {
-  display: flex; flex-wrap: wrap; justify-content: center; column-gap: 1.5cqw; row-gap: .5cqw; max-width: 92cqw;
-  font-size: 2.05cqw; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; line-height: 1.25;
-  color: color-mix(in srgb, var(--nkp-cream) 86%, transparent);
-}
-.nkp-credits strong { font-weight: 600; color: var(--nkp-gold); letter-spacing: .18em; margin-right: .4cqw; }
-.nkp-credits em { font-style: normal; margin: 0 1.1cqw; color: color-mix(in srgb, var(--nkp-gold) 70%, transparent); }
+.nkp-credits { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .9cqw; font-size: 2.05cqw; font-weight: 600; line-height: 1; }
+.nkp-credits strong { font-weight: 700; color: var(--nkp-blue-deep); margin-right: .4cqw; font-size: 2.5cqw; }
+.nkp-credits span { padding: .7cqw 1.6cqw; border-radius: 99cqw; background: color-mix(in srgb, var(--nkp-sun) 55%, var(--nkp-white)); }
+.nkp-credits span:nth-of-type(2) { background: color-mix(in srgb, var(--nkp-pink) 40%, var(--nkp-white)); }
+.nkp-credits span:nth-of-type(3) { background: color-mix(in srgb, var(--nkp-mint) 45%, var(--nkp-white)); }
+.nkp-credits span:nth-of-type(4) { background: color-mix(in srgb, var(--nkp-lilac) 45%, var(--nkp-white)); }
 
-.nkp-steps-label {
-  font-size: 1.8cqw; font-weight: 500; letter-spacing: .34em; text-transform: uppercase;
-  color: color-mix(in srgb, var(--nkp-gold) 88%, transparent);
-}
-.nkp-steps { display: flex; align-items: center; justify-content: center; gap: 2.6cqw; flex-wrap: wrap; }
-.nkp-steps li { display: flex; align-items: center; gap: 1cqw; font-size: 2.5cqw; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--nkp-cream); }
+.nkp-steps-label { font-size: 2.1cqw; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--nkp-sun-deep); }
+.nkp-steps { display: flex; align-items: center; justify-content: center; gap: 2.2cqw; flex-wrap: nowrap; white-space: nowrap; }
+.nkp-steps li { display: flex; align-items: center; gap: .9cqw; font-size: 2.55cqw; font-weight: 600; color: var(--nkp-navy); }
 .nkp-steps li span {
-  flex: none; display: grid; place-items: center; width: 3.5cqw; height: 3.5cqw; border-radius: 50%;
-  border: .16cqw solid var(--nkp-hair); font-size: 1.9cqw; font-weight: 600; color: var(--nkp-gold-soft);
+  flex: none; display: grid; place-items: center; width: 3.8cqw; height: 3.8cqw; border-radius: 50%;
+  background: var(--nkp-sun); box-shadow: 0 .4cqw 0 var(--nkp-sun-deep); font-size: 2.4cqw; font-weight: 700; color: var(--nkp-navy);
 }
+.nkp-steps li:nth-child(2) span { background: var(--nkp-pink); box-shadow: 0 .4cqw 0 color-mix(in srgb, var(--nkp-pink) 60%, var(--nkp-navy)); color: var(--nkp-white); }
+.nkp-steps li:nth-child(3) span { background: var(--nkp-mint); box-shadow: 0 .4cqw 0 color-mix(in srgb, var(--nkp-mint) 60%, var(--nkp-navy)); }
 
 /* The shared NempoFooter supplies the same .kmt-footer pills as slide 35. */
 .nkp-root .kmt-footer { z-index: 8; font-family: 'DM Sans', sans-serif; }
-
-/* Print-like grain over everything */
-.nkp-grain { position: absolute; inset: 0; z-index: 20; pointer-events: none; background: var(--nkp-grain); background-size: 30cqw 30cqw; mix-blend-mode: overlay; opacity: .1; }
-
-@media (prefers-reduced-motion: reduce) {
-  .nkp-root { animation: none; }
-}

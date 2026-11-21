@@ -808,21 +808,19 @@
 }
 /* Nempo Feed slide 56: movie one-sheet collab poster over a night stage scene (gold title, billing block). */
 .nkp-root {
-  --nkp-ink: #04080f;
-  --nkp-night: #050d1a;
+  --nkp-sky: linear-gradient(180deg, #0a7fe8 0%, #1b98fb 22%, #2aa6fd 30%);
   --nkp-white: #ffffff;
-  --nkp-cream: #f7efe0;
-  --nkp-gold: #f2c15c;
-  --nkp-gold-soft: #ffeeb3;
-  --nkp-gold-deep: #a97518;
-  --nkp-hair: color-mix(in srgb, #f2c15c 46%, transparent);
-  --nkp-photo-fade: linear-gradient(180deg, color-mix(in srgb, #04080f 84%, transparent) 0%, color-mix(in srgb, #04080f 36%, transparent) 24%, transparent 42%, transparent 56%, color-mix(in srgb, #04080f 62%, transparent) 74%, color-mix(in srgb, #04080f 95%, transparent) 90%);
-  --nkp-vignette: radial-gradient(120% 78% at 50% 42%, transparent 42%, color-mix(in srgb, #04080f 62%, transparent) 100%);
-  --nkp-tagline-glow: 0 .3cqw 1.6cqw color-mix(in srgb, #04080f 85%, transparent);
-  --nkp-title-shadow: drop-shadow(0 .5cqw 1.8cqw color-mix(in srgb, #04080f 80%, transparent)) drop-shadow(0 0 2.4cqw color-mix(in srgb, #f2c15c 35%, transparent));
-  --nkp-cta-bg: linear-gradient(180deg, #f7d488 0%, #e2a92f 100%);
-  --nkp-cta-shadow: 0 .8cqw 2.4cqw color-mix(in srgb, #04080f 65%, transparent);
-  --nkp-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .25 0 0 0 0 .4 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  --nkp-navy: #15386f;
+  --nkp-blue-deep: #1453b8;
+  --nkp-sun: #ffd23f;
+  --nkp-sun-deep: #e8901c;
+  --nkp-pink: #ff7fb4;
+  --nkp-mint: #5fe0b0;
+  --nkp-lilac: #b79cff;
+  --nkp-card: color-mix(in srgb, #ffffff 92%, transparent);
+  --nkp-pop: 0 .7cqw 0 #1453b8;
+  --nkp-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
+  --nkp-title-shadow: drop-shadow(0 .8cqw 0 #1453b8) drop-shadow(0 1.4cqw 1.6cqw color-mix(in srgb, #0b2f74 40%, transparent));
 }
 /* Nempo Feed slide 48: 3:4 sawer clip — same natural palette as slides 46 and 47. */
 .nbf-root {
