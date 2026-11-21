@@ -48,32 +48,28 @@ export const nempoKolaborasi = {
 } as const;
 
 /**
- * Slide 56 poster copy — the "cara" content laid out as a playful festival-style poster over a photo of a
- * cafe / tourist-spot stage with performers and audience, after the owner's kids-festival references.
+ * Slide 56 poster copy — the "cara" content laid out as a movie one-sheet: studio lockup, big metallic title,
+ * italic tagline, release line, then a billing block of the benefits, the three steps and the WhatsApp CTA,
+ * over a night stage at a cafe / tourist spot with performers and a silhouetted audience.
  */
 export const nempoKolaborasiPoster = {
   presents: 'NEMPO.ID × Kala Muda Present',
+  badge: 'Open Collab',
   title: ['Kamu Siapin', 'Tempat,'],
-  ribbon: 'Kami Urus Acaranya!',
-  venue: ['Cafe &', 'Tempat Wisata'],
-  featuring: ['Kenapa bareng', 'NEMPO?'],
-  left: [
-    { text: 'Konsep &', size: 'big' },
-    { text: 'Rundown', size: 'big' },
-    { text: '+ talent', size: 'small' },
-    { text: 'Acara!', size: 'big' },
-  ],
-  right: [
-    { text: 'Promosi', size: 'big' },
-    { text: 'sosmed &', size: 'small' },
-    { text: 'Dokumen', size: 'big' },
-    { text: 'tasi!', size: 'big' },
+  tagline: 'Kami Urus Acaranya!',
+  release: 'Segera di cafe & tempat wisata',
+  creditsLabel: 'NEMPO urus',
+  credits: [
+    'Konsep & rundown',
+    'Talent & pengisi acara',
+    'Promosi di sosmed NEMPO',
+    'Dokumentasi foto & video',
   ],
   stepsLabel: nempoKolaborasi.cara.stepsLabel,
   steps: nempoKolaborasi.cara.steps,
   cta: `Chat Admin · WA ${nempoKolaborasi.whatsapp.number}`,
 } as const satisfies {
-  left: ReadonlyArray<{ text: string; size: 'big' | 'small' }>;
-  right: ReadonlyArray<{ text: string; size: 'big' | 'small' }>;
+  credits: ReadonlyArray<string>;
+  steps: ReadonlyArray<string>;
   [key: string]: unknown;
 };

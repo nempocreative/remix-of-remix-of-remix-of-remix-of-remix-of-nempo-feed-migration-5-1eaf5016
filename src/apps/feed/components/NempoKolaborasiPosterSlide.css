@@ -1,97 +1,94 @@
-/* NEMPO Feed slide 56 — playful festival-style collab poster over a cartoon stage scene. Colors in src/styles.css (.nkp-root). */
+/* NEMPO Feed slide 56 — movie one-sheet collab poster over a night stage scene. Colors in src/styles.css (.nkp-root). */
 .nkp-root {
   position: relative; isolation: isolate; width: 100%; aspect-ratio: 3 / 4; overflow: hidden;
-  container-type: inline-size; background: var(--nkp-sky); color: var(--nkp-purple);
-  font-family: 'Fredoka', 'Poppins', sans-serif;
+  container-type: inline-size; background: var(--nkp-ink); color: var(--nkp-cream);
+  font-family: 'Oswald', 'Poppins', sans-serif;
 }
-.nkp-root * { box-sizing: border-box; letter-spacing: 0; }
+.nkp-root * { box-sizing: border-box; }
 .nkp-root p, .nkp-root h2, .nkp-root ol { margin: 0; padding: 0; }
 .nkp-root ol { list-style: none; }
 .nkp-root a { text-decoration: none; color: inherit; }
 
-/* Cartoon stage scene: cafe / tourist spot with performers and audience */
-.nkp-photo { position: absolute; z-index: 0; left: 0; top: -14cqw; width: 100%; height: auto; display: block; }
+/* Night stage at a cafe / tourist spot: performers lit on stage, audience in silhouette */
+.nkp-photo { position: absolute; z-index: 0; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 52%; display: block; }
 .nkp-photo-fade { position: absolute; z-index: 1; inset: 0; pointer-events: none; background: var(--nkp-photo-fade); }
+.nkp-vignette { position: absolute; z-index: 2; inset: 0; pointer-events: none; background: var(--nkp-vignette); }
 
-/* Top credit */
+/* Studio lockup + rating-style badge */
 .nkp-presents {
-  position: absolute; z-index: 6; top: 4.4cqw; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 1.4cqw;
-  font-family: 'Poppins', sans-serif; font-size: 2.2cqw; font-weight: 800; color: var(--nkp-purple);
+  position: absolute; z-index: 6; top: 5cqw; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 1.6cqw;
+  font-size: 2.1cqw; font-weight: 500; letter-spacing: .34em; text-transform: uppercase; color: color-mix(in srgb, var(--nkp-cream) 82%, transparent);
+  text-shadow: var(--nkp-tagline-glow);
 }
-.nkp-presents img { width: 4.6cqw; height: 4.6cqw; padding: .5cqw; border-radius: 1.2cqw; background: var(--nkp-white); box-shadow: var(--nkp-soft-shadow); object-fit: contain; }
-
-/* Chunky 3D title */
-.nkp-title { position: absolute; z-index: 5; top: 11cqw; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; text-transform: uppercase; font-weight: 700; line-height: .86; color: var(--nkp-purple); text-shadow: var(--nkp-title-3d); }
-.nkp-title-a { font-size: 13cqw; transform: rotate(-3deg); }
-.nkp-title-b { font-size: 17cqw; transform: rotate(-3deg) translateX(1cqw); }
-
-/* Pink ribbon banner */
-.nkp-ribbon { position: absolute; z-index: 6; top: 43cqw; left: 50%; transform: translateX(-50%) rotate(-5deg); }
-.nkp-ribbon span {
-  display: block; padding: 1.6cqw 8cqw 1.8cqw; background: var(--nkp-pink); color: var(--nkp-cream); white-space: nowrap;
-  font-family: 'Lilita One', 'Fredoka', sans-serif; font-size: 5.4cqw; line-height: 1; text-transform: uppercase; text-shadow: var(--nkp-ribbon-text-shadow);
-  clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%); box-shadow: var(--nkp-soft-shadow);
+.nkp-presents img { width: 4.2cqw; height: 4.2cqw; padding: .45cqw; border-radius: .6cqw; background: var(--nkp-cream); object-fit: contain; }
+.nkp-badge {
+  position: absolute; z-index: 6; top: 4.4cqw; right: 5cqw; padding: .7cqw 1.3cqw .8cqw;
+  border: .18cqw solid var(--nkp-hair); font-size: 1.7cqw; font-weight: 600; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--nkp-gold-soft); background: color-mix(in srgb, var(--nkp-ink) 55%, transparent);
 }
 
-/* Torn-paper venue tag */
-.nkp-tag {
-  position: absolute; z-index: 6; top: 50cqw; right: 5cqw; display: flex; flex-direction: column; align-items: flex-start; gap: .4cqw;
-  padding: 1.8cqw 3cqw 2cqw; background: var(--nkp-paper); box-shadow: var(--nkp-soft-shadow); transform: rotate(5deg);
-  clip-path: polygon(0 4%, 8% 0, 22% 3%, 40% 0, 58% 4%, 76% 0, 92% 3%, 100% 0, 98% 30%, 100% 60%, 97% 100%, 80% 96%, 62% 100%, 44% 96%, 26% 100%, 10% 96%, 0 100%, 2% 66%, 0 34%);
-  font-family: 'Lilita One', 'Fredoka', sans-serif; text-transform: uppercase; line-height: .95; color: var(--nkp-blue-deep);
+/* Big metallic title */
+.nkp-title { position: absolute; z-index: 5; top: 13cqw; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; text-transform: uppercase; }
+.nkp-title span {
+  display: block; background: var(--nkp-title-metal); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 .35cqw 1.4cqw color-mix(in srgb, var(--nkp-gold) 34%, transparent));
 }
-.nkp-tag span { font-size: 3.4cqw; }
-.nkp-tag strong { font-size: 4.6cqw; font-weight: 400; }
+.nkp-title-a { font-family: 'Cinzel', serif; font-weight: 600; font-size: 10.4cqw; line-height: 1.02; letter-spacing: .03em; }
+.nkp-title-b { font-family: 'Cinzel', serif; font-weight: 800; font-size: 15.6cqw; line-height: 1.02; letter-spacing: .01em; margin-top: .6cqw; }
 
-/* "Kenapa bareng NEMPO?" two-line ribbon — sits above the shield logo, clear of the band */
-.nkp-featuring { position: absolute; z-index: 7; top: 71cqw; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; gap: .4cqw; transform: rotate(-2deg); }
-.nkp-featuring span {
-  padding: .6cqw 2.6cqw .7cqw; background: var(--nkp-pink); color: var(--nkp-cream); font-family: 'Lilita One', 'Fredoka', sans-serif;
-  font-size: 3.2cqw; line-height: 1; text-transform: uppercase; box-shadow: var(--nkp-soft-shadow);
+/* Italic tagline between hairlines */
+.nkp-tagline {
+  position: absolute; z-index: 6; top: 43.5cqw; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 2.4cqw;
+  font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 600; font-size: 5.4cqw; line-height: 1;
+  letter-spacing: .04em; color: var(--nkp-gold-soft); text-shadow: var(--nkp-tagline-glow);
+}
+.nkp-tagline span { display: block; width: 11cqw; height: .16cqw; background: var(--nkp-hair); }
+
+/* Release line */
+.nkp-release {
+  position: absolute; z-index: 6; top: 51.5cqw; left: 0; right: 0; text-align: center;
+  font-size: 2.3cqw; font-weight: 400; letter-spacing: .3em; text-transform: uppercase; color: color-mix(in srgb, var(--nkp-cream) 78%, transparent);
+  text-shadow: var(--nkp-tagline-glow);
 }
 
-/* Purple band with benefits + steps shield */
-.nkp-band {
-  position: absolute; z-index: 5; left: 0; right: 0; top: 96cqw; height: 21cqw; background: var(--nkp-band);
-  display: grid; grid-template-columns: 1fr 30cqw 1fr; align-items: center; padding: 0 3cqw;
+/* Billing block: benefits, steps, CTA and socials */
+.nkp-billing {
+  position: absolute; z-index: 7; left: 0; right: 0; bottom: 0; padding: 0 6cqw 4.4cqw;
+  display: flex; flex-direction: column; align-items: center; gap: 1.7cqw;
 }
-.nkp-words { display: flex; flex-direction: column; align-items: center; line-height: .9; font-family: 'Lilita One', 'Fredoka', sans-serif; text-transform: uppercase; transform: rotate(-5deg); }
-.nkp-words--left { color: var(--nkp-yellow); text-shadow: var(--nkp-words-shadow); }
-.nkp-words--right { color: var(--nkp-pink-light); text-shadow: var(--nkp-words-shadow); transform: rotate(-3deg); }
-.nkp-w--big { font-size: 4.8cqw; }
-.nkp-w--small { font-size: 3cqw; font-family: 'Fredoka', sans-serif; font-weight: 700; margin: .5cqw 0; color: var(--nkp-white); }
+.nkp-credits {
+  display: flex; flex-wrap: wrap; justify-content: center; column-gap: 1.5cqw; row-gap: .5cqw; max-width: 92cqw;
+  font-size: 2.05cqw; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; line-height: 1.25;
+  color: color-mix(in srgb, var(--nkp-cream) 86%, transparent);
+}
+.nkp-credits strong { font-weight: 600; color: var(--nkp-gold); letter-spacing: .18em; margin-right: .4cqw; }
+.nkp-credits em { font-style: normal; margin: 0 1.1cqw; color: color-mix(in srgb, var(--nkp-gold) 70%, transparent); }
 
-.nkp-shield {
-  position: relative; z-index: 2; align-self: start; margin-top: -7.5cqw; height: 26cqw; display: flex; flex-direction: column; align-items: center;
-  padding: 2.6cqw 3.6cqw 1.6cqw; background: var(--nkp-shield); border: .8cqw solid var(--nkp-yellow); box-shadow: var(--nkp-shield-shadow);
-  border-radius: 3cqw 3cqw 50% 50% / 3cqw 3cqw 20% 20%; color: var(--nkp-white);
+.nkp-steps-label {
+  font-size: 1.8cqw; font-weight: 500; letter-spacing: .34em; text-transform: uppercase;
+  color: color-mix(in srgb, var(--nkp-gold) 88%, transparent);
 }
-.nkp-shield-logo { width: 7cqw; height: 7cqw; margin-top: -6.2cqw; padding: .8cqw; border-radius: 50%; background: var(--nkp-white); border: .6cqw solid var(--nkp-yellow); box-shadow: var(--nkp-soft-shadow); }
-.nkp-shield-logo img { width: 100%; height: 100%; object-fit: contain; }
-.nkp-shield-title { margin: 1cqw 0 1.4cqw; font-family: 'Lilita One', 'Fredoka', sans-serif; font-size: 3cqw; line-height: 1; color: var(--nkp-yellow); text-transform: uppercase; white-space: nowrap; }
-.nkp-steps { display: flex; flex-direction: column; gap: .9cqw; width: 100%; }
-.nkp-steps li { display: flex; align-items: center; gap: 1cqw; font-size: 2.2cqw; font-weight: 600; line-height: 1.05; }
-.nkp-steps li span { flex: none; display: grid; place-items: center; width: 3.4cqw; height: 3.4cqw; border-radius: 50%; background: var(--nkp-yellow); color: var(--nkp-purple-deep); font-weight: 700; font-size: 2cqw; }
+.nkp-steps { display: flex; align-items: center; justify-content: center; gap: 2.6cqw; flex-wrap: wrap; }
+.nkp-steps li { display: flex; align-items: center; gap: 1cqw; font-size: 2.5cqw; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--nkp-cream); }
+.nkp-steps li span {
+  flex: none; display: grid; place-items: center; width: 3.5cqw; height: 3.5cqw; border-radius: 50%;
+  border: .16cqw solid var(--nkp-hair); font-size: 1.9cqw; font-weight: 600; color: var(--nkp-gold-soft);
+}
 
-/* Grass strip with CTA */
-.nkp-grass {
-  position: absolute; z-index: 6; left: 0; right: 0; bottom: 0; height: 11.5cqw; background: var(--nkp-grass);
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2cqw;
-}
-.nkp-grass::before { content: ''; position: absolute; left: 0; right: 0; top: -1.6cqw; height: 2.2cqw; background: var(--nkp-bush); }
 .nkp-cta {
-  position: relative; display: inline-flex; align-items: center; gap: 1.4cqw; padding: 1.2cqw 5cqw 1.3cqw; background: var(--nkp-pink); color: var(--nkp-cream) !important;
-  font-family: 'Lilita One', 'Fredoka', sans-serif; font-size: 3.8cqw; line-height: 1; text-transform: uppercase; white-space: nowrap;
-  clip-path: polygon(0 0, 100% 0, 97% 50%, 100% 100%, 0 100%, 3% 50%); text-shadow: var(--nkp-ribbon-text-shadow);
+  display: inline-flex; align-items: center; gap: 1.6cqw; margin-top: .4cqw; padding: 1.5cqw 5.4cqw 1.6cqw;
+  background: var(--nkp-cta-bg); color: var(--nkp-ink) !important; border-radius: .4cqw; box-shadow: var(--nkp-cta-shadow);
+  font-size: 3.3cqw; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap;
 }
-.nkp-cta svg { width: 3.8cqw; height: 3.8cqw; }
-.nkp-channels { position: relative; display: flex; gap: 4cqw; font-size: 2.2cqw; font-weight: 700; color: var(--nkp-white); }
-.nkp-channels a { display: inline-flex; align-items: center; gap: .8cqw; }
-.nkp-channels svg { width: 2.4cqw; height: 2.4cqw; }
+.nkp-cta svg { width: 3.4cqw; height: 3.4cqw; }
+
+.nkp-channels { display: flex; gap: 4.2cqw; font-size: 2cqw; font-weight: 400; letter-spacing: .16em; text-transform: uppercase; color: color-mix(in srgb, var(--nkp-cream) 72%, transparent); }
+.nkp-channels a { display: inline-flex; align-items: center; gap: .9cqw; }
+.nkp-channels svg { width: 2.2cqw; height: 2.2cqw; }
 
 /* Print-like grain over everything */
-.nkp-grain { position: absolute; inset: 0; z-index: 20; pointer-events: none; background: var(--nkp-grain); background-size: 30cqw 30cqw; mix-blend-mode: multiply; opacity: .12; }
+.nkp-grain { position: absolute; inset: 0; z-index: 20; pointer-events: none; background: var(--nkp-grain); background-size: 30cqw 30cqw; mix-blend-mode: overlay; opacity: .1; }
 
 @media (prefers-reduced-motion: reduce) {
-  .nkp-shield { animation: none; }
+  .nkp-root { animation: none; }
 }

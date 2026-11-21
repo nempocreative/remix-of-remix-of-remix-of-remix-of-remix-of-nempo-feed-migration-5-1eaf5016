@@ -20,10 +20,19 @@ describe('NEMPO collaboration call for cafes & tourist spots', () => {
   });
 });
 
-describe('NEMPO Feed slide 56 poster layout', () => {
+describe('NEMPO Feed slide 56 movie poster layout', () => {
   it('keeps the "kamu siapin tempat" promise as the poster headline', () => {
     expect(nempoKolaborasiPoster.title).toEqual(['Kamu Siapin', 'Tempat,']);
-    expect(nempoKolaborasiPoster.ribbon).toBe('Kami Urus Acaranya!');
+    expect(nempoKolaborasiPoster.tagline).toBe('Kami Urus Acaranya!');
+  });
+  it('lists exactly the four things NEMPO handles as the billing block', () => {
+    expect(nempoKolaborasiPoster.credits).toEqual(nempoKolaborasi.cara.benefits.map((b) => b.label));
+    expect(nempoKolaborasiPoster.credits).toEqual([
+      'Konsep & rundown',
+      'Talent & pengisi acara',
+      'Promosi di sosmed NEMPO',
+      'Dokumentasi foto & video',
+    ]);
   });
   it('keeps the three collaboration steps in order', () => {
     expect(nempoKolaborasiPoster.steps).toEqual(['Chat admin NEMPO', 'Atur konsep & jadwal', 'Event jalan!']);
